@@ -1,37 +1,62 @@
-/* El fondo de la página */
+/* 1. El fondo rosa que elegiste con una letra más moderna */
 body {
-    background-color: #fdf5e6; /* Un color crema suave */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #4a4a4a;
+    background-color: #fce4ec; 
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra todo el contenido en el medio */
     padding: 20px;
 }
 
-/* Estilo para los títulos (H1 y H2) */
-h1, h2 {
-    color: #f06f13; /* Un tono canela/marrón cálido */
-    text-align: center;
+/* 2. Para que el título no esté pegado arriba */
+h1 {
+    color: #880e4f; /* Un rosa oscuro para que resalte */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Estilo para los párrafos */
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
+/* 3. Contenedor para las tarjetas (si tenés varias) */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Si hay muchos perritos, se pasan abajo solos */
+    justify-content: center;
+    gap: 20px; /* Espacio entre cada tarjeta */
+    width: 100%;
+    max-width: 1200px;
 }
-
-/* Estilo para las listas */
-ul, ol {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 20px auto;
 }
-.tarjeta-perrito {
+.tarjeta-perrito {border-radius: 15px; /* Bordes redondeados pro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Prepara la tarjeta para el movimiento */
+    overflow: hidden; /* Para que la imagen no se salga de las esquinas redondeadas */
   /* 1. Content: Definimos el tamaño de la caja */
   width: 300px;
   height: auto;
-  
+  .tarjeta { /* O el nombre de clase que uses para el contenedor de cada perrito */
+    background-color: #f0cdcd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(205, 171, 171, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Para que se mueva suave después */
+    margin: 15px;.card {
+    background-color: white;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover; /* Para que la foto no se deforme */
+}
+}
   /* 2. Padding: Le damos aire interno al texto para que no toque las paredes */
   padding: 20px;
   
@@ -44,4 +69,21 @@ ul, ol {
   /* Extras: Fondo blanquito y bordes redondeados */
   background-color: #FDFEFE;
   border-radius: 10px;
+  .card:hover {
+    transform: translateY(-10px); /* La tarjeta sube 10 pixeles */
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2); /* La sombra se vuelve más fuerte */
+}
+}
+img {
+    width: 100%;    /* La foto se adapta al ancho de su contenedor (la tarjeta) */
+    max-width: 300px; /* Le ponés un límite para que no se pase de este tamaño */
+    height: auto;   /* Esto evita que la foto se estire o se aplaste */
+    border-radius: 10px; /* Opcional: para que las puntas sean redondeadas */
+}object-fit: cover; /* Corta la imagen para que encaje sin deformarse*/
+    img {
+    width: 100%;
+    height: 200px;     /* Altura fija para que todas queden alineadas */
+    object-fit: cover; /* Corta la foto para que llene el espacio sin deformarse */
+    border-radius: 10px;
+}
 }
