@@ -1,0 +1,47 @@
+/* El fondo de la página */
+body {
+    background-color: #fdf5e6; /* Un color crema suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+    padding: 20px;
+}
+
+/* Estilo para los títulos (H1 y H2) */
+h1, h2 {
+    color: #f06f13; /* Un tono canela/marrón cálido */
+    text-align: center;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Estilo para las listas */
+ul, ol {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.tarjeta-perrito {
+  /* 1. Content: Definimos el tamaño de la caja */
+  width: 300px;
+  height: auto;
+  
+  /* 2. Padding: Le damos aire interno al texto para que no toque las paredes */
+  padding: 20px;
+  
+  /* 3. Border: Le ponemos una línea naranja/marrón de 2 píxeles */
+  border: 2px solid #D35400;
+  
+  /* 4. Margin: Lo separamos 30 píxeles de cualquier otra cosa en la pantalla */
+  margin: 30px;
+  
+  /* Extras: Fondo blanquito y bordes redondeados */
+  background-color: #FDFEFE;
+  border-radius: 10px;
+}

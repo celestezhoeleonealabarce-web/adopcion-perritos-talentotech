@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales en Adopción</title>
+    <style>
+        /* Un poquito de estilo para que no se vea todo amontonado */
+        .contenedor_cajas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .caja {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            width: 200px;
+        }
+        .caja img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        </header>
+
+    <main>
+        <h1>ANIMALES EN ADOPCIÓN</h1>
+        <p>Hola, esta es una página dedicada para mi Mamá y sus perritos</p>
+
+        <h2>¿QUÉ OPCIONES HAY PARA ADOPTAR?</h2>
+        <ul>
+            <li>Perritos</li>
+            <li>Gatitos</li>
+        </ul>
+
+        <h2>PARA ADOPTAR TENÉS QUE TENER:</h2>
+        <ol>
+            <li>Amor</li>
+            <li>Ganas de cuidarlos</li>
+            <li>Juguetes</li>
+        </ol>
+
+        <section class="contenedor_cajas">
+            <h2>PERROS DISPONIBLES PARA ADOPTAR</h2>
+
+       <div class="caja">
+    <img src="img/arg.jpg" alt="Foto de arg">
+    <h2>Pablo</h2>
+</div>
+
+<div class="caja">
+    <img src="img/arg.jpg" alt="Foto de Sergio">
+    <h2>Sergio</h2>
+</div>
+
+<div class="caja">
+    <img src="img/arg.jpg" alt="Foto de Aragorn">
+    <h2>Aragorn el Rey de todo Gondor</h2>
+</div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Página de adopción de perritos</p>
+    </footer>
+
+</body>
+</html>
